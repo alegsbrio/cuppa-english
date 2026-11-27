@@ -27,7 +27,7 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 
 ## 3. Más práctica de examen
 
-- [ ] Colocaciones: de 48 a 120. Formación de palabras: de 40 a 100.
+- [x] Colocaciones: de 48 a 120. Formación de palabras: de 40 a 100.
 - [ ] Reading: 12 tareas nuevas (3 por cada parte de Aptis). Listening: 12 nuevas (repartidas entre las 4 partes).
 - [ ] Writing: 6 tareas nuevas con modelo B2. Speaking: 8 nuevas.
 - [ ] Rincón británico: de 24 a 60 preguntas.
@@ -57,3 +57,4 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 - 2026-11-27 · Unidades 15 (Relationships & feelings · used to / would / be used to / get used to) y 16 (Housing & cities · future continuous y future perfect): 24 palabras y 16 preguntas de gramática.
 - 2026-11-27 · Unidades 17 (Sport & competition · past perfect simple y continuous) y 18 (Arts & culture · question tags y preguntas indirectas): 24 palabras y 16 preguntas de gramática.
 - 2026-11-27 · Unidades 19 a 24 (Business & the economy, Global issues, Language & communication, Travel & transport problems, Personality & behaviour, Future & change) con sus puntos de gramática: condicionales mixtas e inversión, conectores, verbos de reporte, phrasal verbs separables, so/such/too/enough y énfasis, artículos y determinantes. Bloque B2 completo: la app tiene 24 unidades, 288 palabras y 192 preguntas de gramática.
+- 2026-11-27 · Colocaciones: de 48 a 152 (make/do/take/have, preposiciones dependientes y falsos amigos típicos del español: assist/attend, pretend/claim, support/stand, lend/borrow, rise/raise). Formación de palabras: de 40 a 100. Se añaden al final de sus listas con un script.
