@@ -31,7 +31,7 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 - [x] Reading: 12 tareas nuevas (3 por cada parte de Aptis).
 - [x] Listening: 12 tareas nuevas (repartidas entre las 4 partes).
 - [x] Writing: 6 tareas nuevas con modelo B2. Speaking: 8 nuevas.
-- [ ] Rincón británico: de 24 a 60 preguntas.
+- [x] Rincón británico: de 24 a 60 preguntas.
 - [ ] Simulacros completos y cronometrados de Reading y de Listening con todas sus partes y nota estimada, además del Core que ya existe.
 
 ## 4. Aprender mejor
@@ -62,3 +62,4 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 - 2026-11-27 · Reading: 12 tareas nuevas (r7–r18), tres por parte: huecos, ordenar frases, opiniones de cuatro personas y titulares por párrafo (ahora con 5 párrafos y 7 titulares, más cerca del examen). Total: 18 tareas de Reading.
 - 2026-11-27 · Listening: 12 tareas nuevas (l7–l18), tres por parte: mensajes y avisos, diálogos con datos, opiniones hombre/mujer/ambos y monólogos de inferencia. Total: 18 tareas de Listening.
 - 2026-11-27 · Writing: 6 tareas nuevas (w7–w12) con modelo B2 dentro del límite de palabras, incluida la pareja informal/formal sobre el mismo aviso. Speaking: 8 nuevas (s9–s16), dos por parte. Total: 12 de Writing y 16 de Speaking.
+- 2026-11-27 · Rincón británico: de 24 a 60 preguntas (léxico británico frente al americano, expresiones coloquiales, ortografía, costumbres del pub y cortesía británica).
