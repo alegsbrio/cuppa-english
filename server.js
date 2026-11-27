@@ -2,7 +2,7 @@
 // Only listens on this computer (127.0.0.1) and only serves the app's own .html / .js / .css files.
 const http = require('http'), fs = require('fs'), path = require('path');
 const root = __dirname;
-const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8' };
+const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.webmanifest': 'application/manifest+json' };
 const headers = { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', 'X-Frame-Options': 'DENY', 'Referrer-Policy': 'no-referrer' };
 
 const server = http.createServer((req, res) => {

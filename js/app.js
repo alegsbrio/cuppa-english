@@ -651,6 +651,9 @@ document.addEventListener('keydown', e => {
   const p = $('#primary'); if (p) { e.preventDefault(); p.click(); }
 });
 
+// offline support, only on the published (https) site so local development is never served stale files
+if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => { });
+
 try {
   load();
   if (TTS) speechSynthesis.getVoices();
