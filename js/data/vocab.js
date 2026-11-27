@@ -224,5 +224,33 @@ DATA.vocab = [
 ["move in","phrasal verb","start living somewhere","to begin to live in a new home","We can move in on the first of May.","instalarse (en una casa)"],
 ["pedestrian","noun","person on foot","a person who is walking in a street, not travelling in a vehicle","A pedestrian was crossing the road.","peatón"],
 ["traffic jam","noun","line of stopped cars","a long line of vehicles that cannot move or can only move slowly","We were stuck in a traffic jam for an hour.","atasco"]
+]},
+{ title: "Sport & competition", emoji: "🏅", words: [
+["defeat","verb","beat","to win against someone in a game or competition","Nobody expected them to defeat the champions.","derrotar"],
+["draw","noun","tie","a game that ends with both teams having the same score","The match ended in a draw.","empate"],
+["opponent","noun","rival","the person or team that you play against","Her opponent was much taller than her.","adversario"],
+["referee","noun","match official","the person who controls a game and makes sure the rules are followed","The referee blew the whistle.","árbitro"],
+["trophy","noun","prize cup","a silver cup or other object that is given to the winner","The captain lifted the trophy.","trofeo"],
+["coach","noun","trainer","a person who prepares a team or a sportsperson for competitions","The coach asked us to run faster.","entrenador"],
+["compete","verb","take part in a contest","to try to win a race or a game against other people","Ten teams will compete for the title.","competir"],
+["training","noun","practice","the activity of preparing your body for a sport","We have training on Tuesday evenings.","entrenamiento"],
+["injured","adjective","hurt","harmed in an accident or while playing sport","Two players were injured in the first half.","lesionado"],
+["stamina","noun","endurance","the physical strength to do something difficult for a long time","You need stamina to run a marathon.","resistencia"],
+["spectator","noun","onlooker","a person who watches an event, especially a sports event","A spectator ran onto the pitch.","espectador"],
+["give in","phrasal verb","surrender","to stop fighting or arguing and accept that you have lost","She refused to give in, even when she was losing.","rendirse"]
+]},
+{ title: "Arts & culture", emoji: "🎨", words: [
+["exhibition","noun","art show","a public event where paintings, photographs or other objects are shown","The exhibition of Turner's paintings opens in May.","exposición"],
+["masterpiece","noun","great work","an extremely good painting, book or film","The film is a masterpiece.","obra maestra"],
+["sculpture","noun","statue","a work of art made from stone, wood or metal","There is a bronze sculpture in the square.","escultura"],
+["performance","noun","show","the act of acting, singing or playing music in front of people","The evening performance starts at eight.","actuación / función"],
+["novel","noun","long story","a long written story about people and events that are not real","Her first novel sold a million copies.","novela"],
+["playwright","noun","dramatist","a person who writes plays for the theatre","Shakespeare is England's most famous playwright.","dramaturgo"],
+["venue","noun","location","the place where a concert or an event happens","The venue holds two thousand people.","local / recinto"],
+["rehearsal","noun","practice session","a time when actors or musicians practise before a show","The band has a rehearsal every Friday.","ensayo"],
+["cast","noun","actors","all the people who act in a film or play","The cast includes several famous names.","reparto"],
+["sold out","adjective","fully booked","having no tickets left","The concert was sold out in an hour.","agotado (entradas)"],
+["moving","adjective","touching","making you feel strong emotion, especially sadness","It was a very moving story.","conmovedor"],
+["soundtrack","noun","film music","the music that is used in a film","I love the soundtrack of that film.","banda sonora"]
 ]}
 ];

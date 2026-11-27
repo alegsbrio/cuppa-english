@@ -225,5 +225,33 @@ DATA.grammar = [
   ["At ten tomorrow I ___ my exam, so I can't meet you.","will be taking","will have taken","took","In progress at ten: future continuous."],
   ["By the time you ___, I'll have cooked dinner.","arrive","will arrive","will have arrived","After 'by the time' use the present."],
   ["Come at nine. The children ___ to bed by then.","will have gone","will be going","go","'By then' = finished before that time: future perfect."]
+  ]},
+{ title: "Past perfect simple and continuous", level: "B2",
+  ex: ["When we arrived, the match had already started.","She had never seen snow before that winter.","I was tired because I had been running.","They had been waiting for an hour when the bus finally came."],
+  rule: "Past perfect simple (had + past participle) = an action that was completed before another moment in the past. Past perfect continuous (had been + -ing) = an activity that was in progress up to that past moment, often to explain a result or to say how long. State verbs (know, have, be) are not used in the continuous.",
+  es: "Past perfect = el pasado del pasado (había hecho). La forma continua (had been + -ing) subraya la duración o la actividad que explica un resultado.",
+  qs: [
+  ["When I got to the station, the train ___.","had already left","has already left","already leaves","Completed before another past moment: past perfect."],
+  ["Her eyes were red because she ___.","had been crying","has been crying","is crying","An activity up to a past moment that explains a result."],
+  ["I ___ sushi before I went to Japan.","had never eaten","have never eaten","was never eating","Before another past event: past perfect."],
+  ["We ___ for two hours when it started to rain.","had been walking","have been walking","were walked","Duration up to a past moment: past perfect continuous."],
+  ["By the time the police arrived, the thieves ___.","had escaped","have escaped","had been escaped","Completed before a past moment."],
+  ["I ___ him for years before we became friends.","had known","had been knowing","have known","'Know' is a state verb: no continuous form."],
+  ["The pitch was wet because it ___ all night.","had been raining","has been raining","is raining","An activity that explains a past situation."],
+  ["After he ___ his homework, he went out.","had finished","has finished","had been finished","The first of two past actions: past perfect."]
+  ]},
+{ title: "Question tags and indirect questions", level: "B2",
+  ex: ["You're from Spain, aren't you?","She doesn't eat meat, does she?","Could you tell me where the station is?","Do you know if the museum opens on Mondays?"],
+  rule: "Question tags: positive sentence + negative tag, negative sentence + positive tag, with the same auxiliary (You like tea, don't you? He can't swim, can he?). Special cases: I'm late, aren't I? Let's go, shall we? Indirect questions (Could you tell me… / Do you know… / I wonder…) are more polite: they use statement word order, no do / does / did, and if / whether for yes/no questions.",
+  es: "Question tag: frase afirmativa + coletilla negativa y al revés, con el mismo auxiliar. Preguntas indirectas: orden de frase afirmativa, sin do/does/did; con if / whether cuando la respuesta es sí o no.",
+  qs: [
+  ["You've been to London, ___?","haven't you","didn't you","have you","Positive sentence with 'have' → negative tag: haven't you?"],
+  ["She doesn't like opera, ___?","does she","doesn't she","is she","Negative sentence → positive tag with the same auxiliary."],
+  ["Could you tell me where ___?","the theatre is","is the theatre","does the theatre be","Indirect question: statement word order."],
+  ["Do you know ___ the film starts?","what time","what time does","when does","No 'does' in an indirect question."],
+  ["Let's go to the gallery, ___?","shall we","will we","don't we","After Let's…, the tag is 'shall we?'"],
+  ["I wonder ___ they sell tickets at the door.","if","do","that","A yes/no indirect question uses if / whether."],
+  ["They went to the concert, ___?","didn't they","weren't they","did they","Past simple positive → didn't they?"],
+  ["I'm a bit early, ___?","aren't I","amn't I","am not I","The tag for 'I am' is 'aren't I?'"]
   ]}
 ];

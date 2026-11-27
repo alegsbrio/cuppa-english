@@ -16,8 +16,8 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 - [x] 14 · Science & discoveries — pasiva avanzada (have something done, it is said that…)
 - [x] 15 · Relationships & feelings — used to / would / be used to / get used to
 - [x] 16 · Housing & cities — future perfect y future continuous
-- [ ] 17 · Sport & competition — past perfect simple y continuous
-- [ ] 18 · Arts & culture — question tags y preguntas indirectas
+- [x] 17 · Sport & competition — past perfect simple y continuous
+- [x] 18 · Arts & culture — question tags y preguntas indirectas
 - [ ] 19 · Business & the economy — condicionales mixtas e inversión (Had I known…)
 - [ ] 20 · Global issues — conectores avanzados (nonetheless, whereas, owing to, provided that)
 - [ ] 21 · Language & communication — verbos de reporte (admit, deny, suggest, accuse of…)
@@ -55,3 +55,4 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 - 2026-11-27 · `tools/smoke.js`: ejecuta la app real en Node con un navegador simulado (sin paquetes) y juega todas las sesiones: prueba de nivel, 17 días de desafíos, todas las palabras, unidades y tareas, errores y simulacro (~12.000 comprobaciones). `tools/check.js` la lanza al final. Verificado con errores introducidos a propósito (racha, plantilla rota, sesión que no acaba, opción repetida): los detecta todos.
 - 2026-11-27 · Unidades 13 (Crime & justice · modales de deducción) y 14 (Science & discoveries · have something done, it is said that…): 24 palabras y 16 preguntas de gramática. Se añaden con un script que inserta al final de `vocab.js` y `grammar.js`.
 - 2026-11-27 · Unidades 15 (Relationships & feelings · used to / would / be used to / get used to) y 16 (Housing & cities · future continuous y future perfect): 24 palabras y 16 preguntas de gramática.
+- 2026-11-27 · Unidades 17 (Sport & competition · past perfect simple y continuous) y 18 (Arts & culture · question tags y preguntas indirectas): 24 palabras y 16 preguntas de gramática.
