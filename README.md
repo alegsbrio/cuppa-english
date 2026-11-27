@@ -16,7 +16,7 @@ No tiene dependencias ni paso de compilación. El progreso se guarda en el naveg
 ## Qué incluye
 
 - 5 desafíos diarios: palabras nuevas, repaso, gramática, una destreza del examen y rincón británico.
-- 12 unidades de B1 a B2: 144 palabras, 96 preguntas de gramática, 48 colocaciones y 40 ejercicios de formación de palabras.
+- 24 unidades de B1 a B2: 288 palabras, 192 preguntas de gramática, 48 colocaciones y 40 ejercicios de formación de palabras.
 - Tareas de Reading, Listening, Writing y Speaking con el formato de las partes de Aptis, y un simulacro del Core.
 - Prueba de nivel inicial, racha, niveles, logros y lista de errores para repasar.
 

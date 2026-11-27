@@ -18,12 +18,12 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 - [x] 16 · Housing & cities — future perfect y future continuous
 - [x] 17 · Sport & competition — past perfect simple y continuous
 - [x] 18 · Arts & culture — question tags y preguntas indirectas
-- [ ] 19 · Business & the economy — condicionales mixtas e inversión (Had I known…)
-- [ ] 20 · Global issues — conectores avanzados (nonetheless, whereas, owing to, provided that)
-- [ ] 21 · Language & communication — verbos de reporte (admit, deny, suggest, accuse of…)
-- [ ] 22 · Travel & transport problems — phrasal verbs separables e inseparables
-- [ ] 23 · Personality & behaviour — so / such, too / enough, énfasis (What I like is…)
-- [ ] 24 · Future & change — artículos y determinantes (the / a / zero article, each / every, both / either / neither)
+- [x] 19 · Business & the economy — condicionales mixtas e inversión (Had I known…)
+- [x] 20 · Global issues — conectores avanzados (nonetheless, whereas, owing to, provided that)
+- [x] 21 · Language & communication — verbos de reporte (admit, deny, suggest, accuse of…)
+- [x] 22 · Travel & transport problems — phrasal verbs separables e inseparables
+- [x] 23 · Personality & behaviour — so / such, too / enough, énfasis (What I like is…)
+- [x] 24 · Future & change — artículos y determinantes (the / a / zero article, each / every, both / either / neither)
 
 ## 3. Más práctica de examen
 
@@ -56,3 +56,4 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 - 2026-11-27 · Unidades 13 (Crime & justice · modales de deducción) y 14 (Science & discoveries · have something done, it is said that…): 24 palabras y 16 preguntas de gramática. Se añaden con un script que inserta al final de `vocab.js` y `grammar.js`.
 - 2026-11-27 · Unidades 15 (Relationships & feelings · used to / would / be used to / get used to) y 16 (Housing & cities · future continuous y future perfect): 24 palabras y 16 preguntas de gramática.
 - 2026-11-27 · Unidades 17 (Sport & competition · past perfect simple y continuous) y 18 (Arts & culture · question tags y preguntas indirectas): 24 palabras y 16 preguntas de gramática.
+- 2026-11-27 · Unidades 19 a 24 (Business & the economy, Global issues, Language & communication, Travel & transport problems, Personality & behaviour, Future & change) con sus puntos de gramática: condicionales mixtas e inversión, conectores, verbos de reporte, phrasal verbs separables, so/such/too/enough y énfasis, artículos y determinantes. Bloque B2 completo: la app tiene 24 unidades, 288 palabras y 192 preguntas de gramática.
