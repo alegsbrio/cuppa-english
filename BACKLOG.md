@@ -12,8 +12,8 @@ Por orden de prioridad. En cada sesión: coge la primera tarea sin marcar, hazla
 
 Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/grammar.js`, una o dos por sesión, cada una con 12 palabras y un punto de gramática con 8 preguntas.
 
-- [ ] 13 · Crime & justice — modales de deducción (must / might / can't have)
-- [ ] 14 · Science & discoveries — pasiva avanzada (have something done, it is said that…)
+- [x] 13 · Crime & justice — modales de deducción (must / might / can't have)
+- [x] 14 · Science & discoveries — pasiva avanzada (have something done, it is said that…)
 - [ ] 15 · Relationships & feelings — used to / would / be used to / get used to
 - [ ] 16 · Housing & cities — future perfect y future continuous
 - [ ] 17 · Sport & competition — past perfect simple y continuous
@@ -53,3 +53,4 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 - 2026-11-27 · Números fijos: los textos de la ruta, el progreso y la prueba de nivel se calculan con `D.vocab.length` y `D.grammar.length`.
 - 2026-11-27 · Prueba de nivel: sigue con 2 preguntas por unidad, pero termina sola cuando se fallan dos unidades seguidas (las unidades van de fácil a difícil). Probado en navegador: todo mal = 4 preguntas; 4 unidades bien = 12 preguntas; todo bien = todas.
 - 2026-11-27 · `tools/smoke.js`: ejecuta la app real en Node con un navegador simulado (sin paquetes) y juega todas las sesiones: prueba de nivel, 17 días de desafíos, todas las palabras, unidades y tareas, errores y simulacro (~12.000 comprobaciones). `tools/check.js` la lanza al final. Verificado con errores introducidos a propósito (racha, plantilla rota, sesión que no acaba, opción repetida): los detecta todos.
+- 2026-11-27 · Unidades 13 (Crime & justice · modales de deducción) y 14 (Science & discoveries · have something done, it is said that…): 24 palabras y 16 preguntas de gramática. Se añaden con un script que inserta al final de `vocab.js` y `grammar.js`.

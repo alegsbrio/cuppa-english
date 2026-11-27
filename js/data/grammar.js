@@ -169,5 +169,33 @@ DATA.grammar = [
   ["___ she was tired, she finished the essay.","Although","Despite","In spite","although + clause (subject + verb)."],
   ["The flat is small. ___, it is very central.","However","Although","Despite","However + comma starts a new sentence."],
   ["In spite of ___ ill, he went to work.","feeling","he felt","feel","in spite of + -ing."]
+  ]},
+{ title: "Modals of deduction", level: "B2",
+  ex: ["She must be at home. Her car is outside.","He can't be the thief. He was with me all evening.","They might have missed the train.","Someone must have left the door open."],
+  rule: "Use must + infinitive when you are sure something is true, can't when you are sure it is not true, and might / may / could when it is possible. For the past, use modal + have + past participle: must have left, can't have seen, might have forgotten. We do not use mustn't to make a deduction.",
+  es: "must = seguro que sí; can't = seguro que no; might / may / could = quizá. En pasado: modal + have + participio (must have gone). Para deducir no se usa mustn't.",
+  qs: [
+  ["The lights are off and nobody is answering. They ___ be out.","must","can't","can","You are sure it is true: must."],
+  ["He ___ be hungry. He's just eaten two pizzas.","can't","mustn't","must","You are sure it is not true: can't (never mustn't)."],
+  ["I'm not sure where Anna is. She ___ be in the library.","might","must","can't","Possible but not certain: might."],
+  ["The window is broken. Someone ___ broken in.","must have","must","can't have","A sure deduction about the past: must have + participle."],
+  ["He ___ taken the money. He was in Paris that day.","can't have","must have","mustn't have","Sure that it did not happen: can't have + participle."],
+  ["I can't find my keys. I ___ left them at the office.","might have","might","must","A possibility in the past: might have + participle."],
+  ["You've been driving all day. You ___ be exhausted.","must","can't","can","A logical conclusion: must."],
+  ["That ___ be Tom at the door. He's in Scotland this week.","can't","mustn't","must","Impossible: can't (not mustn't)."]
+  ]},
+{ title: "Advanced passives: have something done, it is said that…", level: "B2",
+  ex: ["I had my hair cut yesterday. (someone else cut it)","We're having the kitchen painted next week.","It is said that the castle is haunted.","The castle is said to be haunted."],
+  rule: "have + object + past participle = you arrange for someone else to do something for you (I had my car repaired). 'get' is a more informal alternative. To report what people generally say or believe, use It is said / believed / thought that + clause, or subject + is said / believed / thought + to-infinitive (to have + past participle for a past action).",
+  es: "have / get + objeto + participio = encargar que te hagan algo (I had my hair cut = me corté el pelo en la peluquería). It is said that… / He is said to… = se dice que…",
+  qs: [
+  ["I ___ at the hairdresser's yesterday.","had my hair cut","had cut my hair","had my hair to cut","Someone else did it for you: have + object + past participle."],
+  ["We're ___ next week.","having the roof repaired","having repaired the roof","having the roof repair","have + object + past participle."],
+  ["It ___ that the painting is worth millions.","is said","says","is saying","Impersonal passive: It is said that…"],
+  ["He is believed ___ in France.","to live","that he lives","living","Subject + is believed + to-infinitive."],
+  ["How often do you ___?","have your car serviced","have serviced your car","have your car service","have + object + past participle."],
+  ["The thieves are thought ___ the country last night.","to have left","to leave","that they left","A past action: to have + past participle."],
+  ["She ___ while she was on holiday.","had her bag stolen","had stolen her bag","was her bag stolen","have + object + participle can also describe something bad that happened to you."],
+  ["I must get my eyes ___.","tested","test","to test","get + object + past participle."]
   ]}
 ];

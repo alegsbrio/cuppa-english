@@ -168,5 +168,33 @@ DATA.vocab = [
 ["overall","adverb","in general","considering everything","Overall, the event was a success.","en general"],
 ["affect","verb","influence","to produce a change in someone or something","Noise can affect your sleep.","afectar"],
 ["likely","adjective","probable","expected to happen","It is likely to rain later.","probable"]
+]},
+{ title: "Crime & justice", emoji: "🚔", words: [
+["burglary","noun","break-in","the crime of entering a building illegally in order to take things","There was a burglary at the house next door.","robo en una vivienda"],
+["witness","noun","observer","a person who sees an accident or an illegal act happen","The police are looking for a witness to the accident.","testigo"],
+["suspect","noun","possible offender","a person who the police think may have done something illegal","The police have arrested a suspect.","sospechoso"],
+["evidence","noun","proof","facts or objects that show that something is true","There was no evidence against him.","pruebas"],
+["fine","noun","penalty","money that you must pay as a punishment for breaking a rule","She got a fine for parking outside the station.","multa"],
+["sentence","noun","punishment","the time in prison that a judge gives to someone who has broken the law","The judge gave him a five-year sentence.","condena"],
+["guilty","adjective","responsible","having done something that is against the rules of a country","The jury decided that she was guilty.","culpable"],
+["innocent","adjective","blameless","not having done anything wrong","He says he is innocent.","inocente"],
+["steal","verb","take illegally","to take something that belongs to another person without permission","Someone tried to steal my bike.","robar"],
+["arrest","verb","detain","(of the police) to take someone away to ask them questions about an illegal act","The police can arrest anyone who refuses to leave.","detener"],
+["court","noun","tribunal","the place where a judge decides whether someone has broken the rules of a country","She had to appear in court on Monday.","tribunal / juzgado"],
+["shoplifting","noun","stealing from shops","the act of taking things from a shop without paying for them","Shoplifting costs shops millions of pounds a year.","hurto en tiendas"]
+]},
+{ title: "Science & discoveries", emoji: "🔬", words: [
+["experiment","noun","scientific test","a test that is done to learn something or to see if an idea is true","The experiment showed that plants need light.","experimento"],
+["discover","verb","find out","to find or learn something for the first time","Scientists hope to discover a new planet.","descubrir"],
+["invention","noun","creation","a thing that someone has made for the first time","The wheel was a brilliant invention.","invento"],
+["cure","noun","remedy","a medicine or treatment that makes an illness go away","There is still no cure for the common cold.","cura"],
+["researcher","noun","investigator","a person whose job is to study a subject in detail","A researcher at Leeds University led the study.","investigador"],
+["data","noun","figures","facts and numbers that are collected so that they can be studied","We need more data before we decide.","datos"],
+["prove","verb","confirm","to use facts to make it clear that something is true","Can you prove that you were at home?","demostrar"],
+["accurate","adjective","exact","correct and true in every detail","The weather forecast was accurate.","preciso"],
+["theory","noun","explanation","a set of ideas that tries to explain why something happens","Darwin's theory changed science for ever.","teoría"],
+["develop","verb","create over time","to design or make something new over a period of time","It took ten years to develop the vaccine.","desarrollar"],
+["gene","noun","unit of DNA","a part of a cell that controls what a living thing is like and is passed on from its parents","The gene is found in one person in ten.","gen"],
+["side effect","noun","unwanted result","an extra and usually bad result that a drug has on your body","Tiredness is a common side effect of this medicine.","efecto secundario"]
 ]}
 ];
