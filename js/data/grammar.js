@@ -197,5 +197,33 @@ DATA.grammar = [
   ["The thieves are thought ___ the country last night.","to have left","to leave","that they left","A past action: to have + past participle."],
   ["She ___ while she was on holiday.","had her bag stolen","had stolen her bag","was her bag stolen","have + object + participle can also describe something bad that happened to you."],
   ["I must get my eyes ___.","tested","test","to test","get + object + past participle."]
+  ]},
+{ title: "used to, would, be used to, get used to", level: "B2",
+  ex: ["I used to live in Leeds. (I don't live there now)","When we were kids, we would spend every summer at the beach.","I'm used to getting up early. (it's normal for me)","It took me months to get used to driving on the left."],
+  rule: "used to + infinitive = past habits and states that are no longer true (negative: didn't use to). would + infinitive = repeated past actions only, never states (I used to have a dog, not: I would have a dog). be used to + noun / -ing = be accustomed to something. get used to + noun / -ing = become accustomed to it.",
+  es: "used to + infinitivo = antes solía (ya no). would = acciones repetidas del pasado, nunca estados. be used to + -ing = estar acostumbrado a; get used to + -ing = acostumbrarse a.",
+  qs: [
+  ["I ___ smoke, but I gave up years ago.","used to","am used to","use to","A past habit that is finished: used to + infinitive."],
+  ["She's a nurse, so she ___ working at night.","is used to","used to","uses to","Accustomed to something: be used to + -ing."],
+  ["We ___ have a dog when I was a child.","used to","would","were used to","A past state: used to (would is only for repeated actions)."],
+  ["It's hard at first, but you'll soon ___ the cold.","get used to","be used","used to","Become accustomed: get used to + noun."],
+  ["Every Sunday my grandfather ___ take us to the park.","would","was used to","use to","A repeated action in the past: would + infinitive."],
+  ["I'm not used to ___ so early.","getting up","get up","got up","be used to + -ing."],
+  ["There ___ be a cinema here, but it closed in 2015.","used to","would","was used to","A past state: used to."],
+  ["He ___ like vegetables, but now he loves them.","didn't use to","didn't used","wasn't used to","Negative: didn't use to + infinitive."]
+  ]},
+{ title: "Future continuous and future perfect", level: "B2",
+  ex: ["This time tomorrow I'll be flying to Rome.","Don't ring at eight. We'll be having dinner.","By 2030 they will have built a new station.","By the time you arrive, I'll have finished."],
+  rule: "Future continuous (will be + -ing) = an action in progress at a certain time in the future. Future perfect (will have + past participle) = an action that will be finished before a certain time in the future, often with by / by then / by the time. After by the time and when, use the present, not will.",
+  es: "Future continuous = estaré haciendo (en curso en un momento futuro). Future perfect = habré hecho (terminado antes de un momento futuro; suele ir con by…).",
+  qs: [
+  ["This time next week I ___ on a beach in Spain.","will be lying","will have lain","lie","In progress at a future time: will be + -ing."],
+  ["By Friday I ___ the report.","will have finished","will be finishing","finish","Completed before a future time: will have + participle."],
+  ["Don't phone at seven. We ___ dinner then.","will be having","will have had","have had","In progress at that time: future continuous."],
+  ["By the time she retires, she ___ here for forty years.","will have worked","will be working","works","Duration up to a future point: future perfect."],
+  ["By 2040 scientists ___ a cure.","will have found","will be finding","find","Finished before 2040: future perfect."],
+  ["At ten tomorrow I ___ my exam, so I can't meet you.","will be taking","will have taken","took","In progress at ten: future continuous."],
+  ["By the time you ___, I'll have cooked dinner.","arrive","will arrive","will have arrived","After 'by the time' use the present."],
+  ["Come at nine. The children ___ to bed by then.","will have gone","will be going","go","'By then' = finished before that time: future perfect."]
   ]}
 ];

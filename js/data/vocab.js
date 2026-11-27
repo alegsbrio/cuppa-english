@@ -196,5 +196,33 @@ DATA.vocab = [
 ["develop","verb","create over time","to design or make something new over a period of time","It took ten years to develop the vaccine.","desarrollar"],
 ["gene","noun","unit of DNA","a part of a cell that controls what a living thing is like and is passed on from its parents","The gene is found in one person in ten.","gen"],
 ["side effect","noun","unwanted result","an extra and usually bad result that a drug has on your body","Tiredness is a common side effect of this medicine.","efecto secundario"]
+]},
+{ title: "Relationships & feelings", emoji: "💞", words: [
+["get on","phrasal verb","have a good relationship","to be friendly with someone","I get on well with my sister.","llevarse bien"],
+["fall out","phrasal verb","quarrel","to have a disagreement with someone and stop being friendly","I hope we never fall out over money.","pelearse / enfadarse"],
+["trust","verb","rely on","to believe that someone is honest and will not hurt you","You can trust her with any secret.","confiar en"],
+["jealous","adjective","envious","unhappy because someone has something that you want","He felt jealous when his friend won.","celoso / envidioso"],
+["upset","adjective","unhappy","sad or worried because something bad has happened","She was upset about the news.","disgustado"],
+["relieved","adjective","reassured","happy because something bad did not happen or has ended","I was relieved to hear that you were safe.","aliviado"],
+["annoyed","adjective","irritated","a little angry","I was annoyed that nobody called.","molesto"],
+["thrilled","adjective","delighted","extremely pleased and excited","We were thrilled with the present.","encantado"],
+["miss","verb","long for","to feel sad because someone is not with you","I miss my family when I travel.","echar de menos"],
+["break up","phrasal verb","separate","to end a romantic relationship","They decided to break up after five years.","romper (una relación)"],
+["supportive","adjective","encouraging","giving help and kindness to someone who is having a difficult time","My parents were very supportive.","comprensivo / que apoya"],
+["mood","noun","state of mind","the way you feel at a particular time","He's in a good mood today.","estado de ánimo"]
+]},
+{ title: "Housing & cities", emoji: "🏙️", words: [
+["landlord","noun","property owner","a person who owns a house or flat and lets other people live there for money","Our landlord is going to put the rent up.","casero"],
+["tenant","noun","renter","a person who pays money to live in a house or flat that belongs to someone else","The last tenant left the flat in a mess.","inquilino"],
+["mortgage","noun","home loan","money that you borrow from a bank to buy a house","They took out a mortgage to buy the flat.","hipoteca"],
+["suburb","noun","outer district","an area where people live that is outside the centre of a city","They live in a quiet suburb of Manchester.","barrio periférico"],
+["commuter","noun","daily traveller","a person who travels a long way to work every day","Every commuter on the platform looked tired.","persona que viaja a diario al trabajo"],
+["deposit","noun","advance payment","money that you pay first when you agree to rent or buy something","We paid a deposit of one month's rent.","fianza / señal"],
+["spacious","adjective","roomy","having a lot of room inside","The living room is bright and spacious.","amplio"],
+["cramped","adjective","too small","not having enough room for the people or things in it","Six of us shared a cramped office.","estrecho / apretado"],
+["run-down","adjective","in bad condition","(of a building or area) old and not looked after","They bought a run-down cottage and repaired it.","deteriorado"],
+["move in","phrasal verb","start living somewhere","to begin to live in a new home","We can move in on the first of May.","instalarse (en una casa)"],
+["pedestrian","noun","person on foot","a person who is walking in a street, not travelling in a vehicle","A pedestrian was crossing the road.","peatón"],
+["traffic jam","noun","line of stopped cars","a long line of vehicles that cannot move or can only move slowly","We were stuck in a traffic jam for an hour.","atasco"]
 ]}
 ];
