@@ -6,7 +6,7 @@ Por orden de prioridad. En cada sesión: coge la primera tarea sin marcar, hazla
 
 - [x] Quitar los números fijos del código y los textos ("12 unidades", "de 12 puntos de gramática", `'/12'`…) y calcularlos a partir de `D.vocab.length` y `D.grammar.length`, para que añadir unidades no deje textos falsos.
 - [x] Prueba de nivel: que siga durando unos 5 minutos aunque haya más unidades (por ejemplo, una pregunta por unidad o un máximo de 30).
-- [ ] Añadir `tools/smoke.js`: una prueba automática en Node que cargue `js/app.js` con un DOM simulado mínimo (sin instalar paquetes; si no es viable, con `jsdom` instalado fuera del repositorio) y recorra una sesión de cada tipo sin errores. Integrarla en `tools/check.js`.
+- [x] Añadir `tools/smoke.js`: una prueba automática en Node que cargue `js/app.js` con un DOM simulado mínimo (sin instalar paquetes; si no es viable, con `jsdom` instalado fuera del repositorio) y recorra una sesión de cada tipo sin errores. Integrarla en `tools/check.js`.
 
 ## 2. Contenido: segundo bloque de nivel B2 (lo más importante)
 
@@ -52,3 +52,4 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 
 - 2026-11-27 · Números fijos: los textos de la ruta, el progreso y la prueba de nivel se calculan con `D.vocab.length` y `D.grammar.length`.
 - 2026-11-27 · Prueba de nivel: sigue con 2 preguntas por unidad, pero termina sola cuando se fallan dos unidades seguidas (las unidades van de fácil a difícil). Probado en navegador: todo mal = 4 preguntas; 4 unidades bien = 12 preguntas; todo bien = todas.
+- 2026-11-27 · `tools/smoke.js`: ejecuta la app real en Node con un navegador simulado (sin paquetes) y juega todas las sesiones: prueba de nivel, 17 días de desafíos, todas las palabras, unidades y tareas, errores y simulacro (~12.000 comprobaciones). `tools/check.js` la lanza al final. Verificado con errores introducidos a propósito (racha, plantilla rota, sesión que no acaba, opción repetida): los detecta todos.

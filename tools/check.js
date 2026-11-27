@@ -85,5 +85,10 @@ const sw = fs.readFileSync(path.join(root, 'sw.js'), 'utf8');
 (sw.match(/'[^']+\.(?:html|css|js|png|webmanifest)'/g) || []).forEach(f => { if (!fs.existsSync(path.join(root, f.slice(1, -1)))) fail('sw.js caches a missing file: ' + f); });
 
 console.log(`units ${D.vocab.length} · words ${words.length} · grammar questions ${gqs.length} · collocations ${D.colloc.length} · word formation ${D.wordform.length} · tasks ${ids.length}`);
+// play the whole app in a fake browser (only when the content itself is consistent)
+if (!bad) {
+  try { console.log(cp.execFileSync(process.execPath, [path.join(__dirname, 'smoke.js')], { stdio: 'pipe', timeout: 300000 }).toString().trim()); }
+  catch (e) { fail('smoke test: ' + String(e.stdout || e.message).trim()); }
+}
 console.log(bad ? bad + ' problem(s) found' : 'OK');
 process.exit(bad ? 1 : 0);

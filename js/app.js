@@ -658,6 +658,9 @@ document.addEventListener('keydown', e => {
   const p = $('#primary'); if (p) { e.preventDefault(); p.click(); }
 });
 
+// hook for the automated test in tools/smoke.js (never set in the real app)
+if (window.__CUPPA_TEST__) window.__cuppa = { act, state: () => S, session: () => ses, ui: () => ui, setVal: v => { ui.val = v; } };
+
 // offline support, only on the published (https) site so local development is never served stale files
 if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => { });
 
