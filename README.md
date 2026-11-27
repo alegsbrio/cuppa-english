@@ -4,7 +4,9 @@ Aplicación web para preparar el nivel B2 del examen Aptis con desafíos diarios
 
 ## Cómo usarla
 
-Requiere [Node.js](https://nodejs.org).
+**En el móvil o en cualquier navegador:** <https://alegsbrio.github.io/cuppa-english/>. Desde el menú del navegador se puede añadir a la pantalla de inicio; después funciona también sin conexión.
+
+**En local** requiere [Node.js](https://nodejs.org).
 
 - **Windows:** doble clic en `Iniciar.bat`.
 - **Cualquier sistema:** `node server.js` y abre <http://localhost:5173>.
