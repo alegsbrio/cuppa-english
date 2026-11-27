@@ -29,7 +29,7 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 
 - [x] Colocaciones: de 48 a 120. Formación de palabras: de 40 a 100.
 - [x] Reading: 12 tareas nuevas (3 por cada parte de Aptis).
-- [ ] Listening: 12 tareas nuevas (repartidas entre las 4 partes).
+- [x] Listening: 12 tareas nuevas (repartidas entre las 4 partes).
 - [ ] Writing: 6 tareas nuevas con modelo B2. Speaking: 8 nuevas.
 - [ ] Rincón británico: de 24 a 60 preguntas.
 - [ ] Simulacros completos y cronometrados de Reading y de Listening con todas sus partes y nota estimada, además del Core que ya existe.
@@ -60,3 +60,4 @@ Añadir 12 unidades nuevas (13–24) al final de `js/data/vocab.js` y `js/data/g
 - 2026-11-27 · Unidades 19 a 24 (Business & the economy, Global issues, Language & communication, Travel & transport problems, Personality & behaviour, Future & change) con sus puntos de gramática: condicionales mixtas e inversión, conectores, verbos de reporte, phrasal verbs separables, so/such/too/enough y énfasis, artículos y determinantes. Bloque B2 completo: la app tiene 24 unidades, 288 palabras y 192 preguntas de gramática.
 - 2026-11-27 · Colocaciones: de 48 a 152 (make/do/take/have, preposiciones dependientes y falsos amigos típicos del español: assist/attend, pretend/claim, support/stand, lend/borrow, rise/raise). Formación de palabras: de 40 a 100. Se añaden al final de sus listas con un script.
 - 2026-11-27 · Reading: 12 tareas nuevas (r7–r18), tres por parte: huecos, ordenar frases, opiniones de cuatro personas y titulares por párrafo (ahora con 5 párrafos y 7 titulares, más cerca del examen). Total: 18 tareas de Reading.
+- 2026-11-27 · Listening: 12 tareas nuevas (l7–l18), tres por parte: mensajes y avisos, diálogos con datos, opiniones hombre/mujer/ambos y monólogos de inferencia. Total: 18 tareas de Listening.
