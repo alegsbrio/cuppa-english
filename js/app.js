@@ -83,7 +83,7 @@ const L = {
   needWords: ['Primero completa «Palabras nuevas»', 'Complete "New words" first'],
   dayStreak: ['días de racha', 'day streak'], perfect: ['¡Día perfecto! +50 XP', 'Perfect day! +50 XP'],
   streak: ['Racha', 'Streak'], best: ['Mejor racha', 'Best streak'],
-  pathIntro: ['12 unidades de B1 a B2. Las palabras y la gramática avanzan con tus desafíos diarios.', '12 units from B1 to B2. Words and grammar move forward with your daily challenges.'],
+  pathIntro: ['{n} unidades de B1 a B2. Las palabras y la gramática avanzan con tus desafíos diarios.', '{n} units from B1 to B2. Words and grammar move forward with your daily challenges.'],
   words: ['Palabras', 'Words'], grammar: ['Gramática', 'Grammar'],
   learnUnit: ['Aprender / practicar vocabulario', 'Learn / practise vocabulary'], gramUnit: ['Practicar gramática', 'Practise grammar'],
   back: ['← Volver', '← Back'],
@@ -100,8 +100,8 @@ const L = {
   w2: ['Todo en inglés, como en una academia de Inglaterra. El español queda a un toque si lo necesitas.', 'Everything in English, like a language school in England. Spanish is one tap away if you need it.'],
   w3: ['Lo que fallas vuelve; lo que dominas se espacia. Mantén la racha.', 'What you get wrong comes back; what you know is spaced out. Keep your streak.'],
   wTest: ['Hacer la prueba de nivel (5 min)', 'Take the level test (5 min)'], wSkip: ['Empezar desde el principio', 'Start from the beginning'],
-  plRes: ['Dominas {n} de 12 puntos de gramática. Empiezas en la unidad {u}.', 'You have mastered {n} of 12 grammar points. You start at unit {u}.'],
-  plAll: ['Dominas los 12 puntos de gramática. Tendrás repaso mixto cada día.', 'You have mastered all 12 grammar points. You will get a mixed review every day.'],
+  plRes: ['Dominas {n} de {t} puntos de gramática. Empiezas en la unidad {u}.', 'You have mastered {n} of {t} grammar points. You start at unit {u}.'],
+  plAll: ['Dominas los {t} puntos de gramática. Tendrás repaso mixto cada día.', 'You have mastered all {t} grammar points. You will get a mixed review every day.'],
   cont: ['Continuar', 'Continue'], allDone: ['¡Día completado! Sigue en Práctica o vuelve mañana.', 'Day complete! Carry on in Practice or come back tomorrow.'],
   know: ['Ya la conozco →', 'I already know this →'],
   wfT: ['Formación de palabras (10 preguntas)', 'Word formation (10 questions)'],
@@ -336,12 +336,19 @@ function completeCh(i) {
 /* ---------- session engine ---------- */
 let ses = null, ui = {}, tick = null, view = 'home', viewArg = null;
 function run(title, steps, onDone, o = {}) {
-  ses = { title, steps, i: 0, correct: 0, total: 0, xp: 0, onDone, exam: !!o.exam, fix: !!o.fix, kind: o.kind, plays: new Map(), miss: [], combo: 0, res: {} };
+  ses = { title, steps, i: 0, correct: 0, total: 0, xp: 0, onDone, exam: !!o.exam, fix: !!o.fix, kind: o.kind, plays: new Map(), miss: [], combo: 0, res: {}, place: !!o.place };
   if (o.mins) {
     ses.end = Date.now() + o.mins * 6e4;
     tick = setInterval(() => { const s = Math.max(0, Math.round((ses.end - Date.now()) / 1000)); const el = $('#timer'); if (el) el.textContent = fmt(s); if (s <= 0) finish(); }, 500);
   }
   ui = {}; draw(); window.scrollTo(0, 0);
+}
+// level test: units go from easier to harder, so it ends early once two units in a row are failed
+function placeStop() {
+  const n = ses.i + 1; if (n % 2) return;
+  const passed = u => [0, 1].every(j => ses.res[ses.steps[u * 2 + j].gid]);
+  const u = n / 2 - 1;
+  if (u >= 1 && !passed(u) && !passed(u - 1)) ses.steps.length = n;
 }
 function stopStep() { hush(); if (ui.timer) clearInterval(ui.timer); if (ui.rec) ui.rec.stop(); }
 function grade(ok) {
@@ -467,7 +474,7 @@ function vHome() {
 }
 function bar(a, b) { return `<div class="prog"><i style="width:${Math.round(a / b * 100)}%"></i></div>`; }
 function vPath() {
-  return `<header class="top"><div><h1>${t('path')}</h1><p>${t('pathIntro')}</p></div></header>` +
+  return `<header class="top"><div><h1>${t('path')}</h1><p>${t('pathIntro').replace('{n}', D.vocab.length)}</p></div></header>` +
     D.vocab.map((u, i) => {
       const w = u.words.filter(x => S.words[x[0]]).length, g = gramCount(i);
       return `<button class="card unit" data-act="unit" data-arg="${i}"><span class="ic">${u.emoji}</span><span class="tx"><b>${i + 1}. ${esc(u.title)}</b><small>${esc(D.grammar[i].title)} · ${D.grammar[i].level}</small><span class="bars"><em>${t('words')} ${w}/${u.words.length}</em>${bar(w, u.words.length)}<em>${t('grammar')} ${g}/8</em>${bar(g, 8)}</span></span></button>`;
@@ -494,7 +501,7 @@ function vProgress() {
   const sk = ['reading', 'listening', 'writing', 'speaking'].map(k => D[k].filter(x => S.done[x.id]).length);
   const stat = (v, l) => `<div class="stat"><b>${v}</b><small>${l}</small></div>`;
   return `<header class="top"><div><h1>${t('progress')}</h1></div></header>
-  <section class="card grid">${stat('🔥 ' + (S.lastGoal >= dn - 1 ? S.streak : 0), t('streak'))}${stat(S.best, t('best'))}${stat('⭐ ' + S.xp, 'XP')}${stat(lw.length + '/' + ALL.length, t('wLearnt'))}${stat(boxes[3] + boxes[4], t('wStrong'))}${stat(Object.keys(S.words).filter(k => k.startsWith('c:')).length + '/' + D.colloc.length, t('colDone'))}${stat(gd + '/12', t('gDone'))}${stat(sum(sk), t('skDone'))}${stat(S.mock ? S.mock.score + '/' + S.mock.of : '–', t('mockT'))}</section>
+  <section class="card grid">${stat('🔥 ' + (S.lastGoal >= dn - 1 ? S.streak : 0), t('streak'))}${stat(S.best, t('best'))}${stat('⭐ ' + S.xp, 'XP')}${stat(lw.length + '/' + ALL.length, t('wLearnt'))}${stat(boxes[3] + boxes[4], t('wStrong'))}${stat(Object.keys(S.words).filter(k => k.startsWith('c:')).length + '/' + D.colloc.length, t('colDone'))}${stat(gd + '/' + D.grammar.length, t('gDone'))}${stat(sum(sk), t('skDone'))}${stat(S.mock ? S.mock.score + '/' + S.mock.of : '–', t('mockT'))}</section>
   ${readiness()}
   <section class="card"><h2>🏅 ${t('badges')}</h2><div class="badges">${BADGES.map(b => `<div class="badge ${b[3]() ? 'on' : ''}"><span>${b[0]}</span><small>${S.lang === 'en' ? b[2] : b[1]}</small></div>`).join('')}</div></section>
   <section class="card"><h2>${t('words')}</h2><p class="note">${t('boxes')}</p><div class="boxes">${boxes.map(b => `<div><i style="height:${Math.round(b / mx * 60) + 4}px"></i><small>${b}</small></div>`).join('')}</div></section>
@@ -552,7 +559,7 @@ const act = {
   pick(a) {
     const st = ses.steps[ses.i]; if (ui.answered) return;
     ui.pick = +a; const ok = st.opts[ui.pick] === st.ans;
-    if (ses.exam) { accAdd(st, ok); if (st.gid) ses.res[st.gid] = ok; if (ok) ses.correct++; else { const k = errKey(st); if (k) { S.err[k] = 1; save(); } ses.miss.push({ q: st.sub || st.big || st.prompt, you: st.opts[ui.pick], ans: st.ans }); } return next(); }
+    if (ses.exam) { accAdd(st, ok); if (st.gid) ses.res[st.gid] = ok; if (ok) ses.correct++; else { const k = errKey(st); if (k) { S.err[k] = 1; save(); } ses.miss.push({ q: st.sub || st.big || st.prompt, you: st.opts[ui.pick], ans: st.ans }); } if (ses.place) placeStop(); return next(); }
     grade(ok);
   },
   check() {
@@ -579,8 +586,8 @@ const act = {
       });
       delete S.days[dateStr()]; // rebuild today's plan from the new starting point
       const g = gramUnitIdx();
-      return g < 0 ? t('plAll') : t('plRes').replace('{n}', n).replace('{u}', g + 1);
-    }, { exam: true });
+      return (g < 0 ? t('plAll') : t('plRes').replace('{n}', n).replace('{u}', g + 1)).replace('{t}', D.grammar.length);
+    }, { exam: true, place: true });
   },
   wordform() { run(t('wfT'), srsPick('f', D.wordform, 10).map(fq)); },
   place(a) { ui.order = (ui.order || []).concat(+a); draw(); },
